@@ -10,3 +10,5 @@ Dans l'ordre :
   - creation_csv.py : va générer les différents fichiers csv
   - insertion_sql.py : qui va injecter les données des csv dans la base de données sql
   - selection.py : qui va générer les différentes requêtes sql demandés
+
+Note : Il vous faudra cependant changer l'ip présentes dans les scripts "insertion.py" et "selection.py" pour l'adapter à votre environnement de test.
