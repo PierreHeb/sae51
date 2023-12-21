@@ -1,7 +1,7 @@
 # sae51
 # Utilisation des différents scripts
 
- Pour commencer, lancez le script "launch.sh" afin de créer l'image ainsi que le conteneur docker mysql qui contiendra la base de données générées par le fichir bdd.sql
+Pour commencer, lancez le script "launch.sh" afin de créer l'image ainsi que le conteneur docker mysql qui contiendra la base de données générées par le fichir bdd.sql.
 Une fois lancé, vous devrez mettre en place votre environnement python en utilisant le fichier "requirements.txt" qui contient toutes les bibliothèques à installer.
 
 ## Utilisation des scripts python
