@@ -1,4 +1,4 @@
-# sae51
+# SAE51
 # Utilisation des différents scripts
 
 Pour commencer, lancez le script "launch.sh" afin de créer l'image ainsi que le conteneur docker mysql qui contiendra la base de données générées par le fichir bdd.sql.
