@@ -12,3 +12,9 @@ Dans l'ordre :
   - selection.py : qui va générer les différentes requêtes sql demandés
 
 Note : Il vous faudra cependant changer l'ip présente dans les scripts "insertion.py" et "selection.py" pour l'adapter à votre environnement de test.
+
+
+## Description des scripts .sh
+launch.sh : Permet de créer et de lancer le conteneur mysql en utilisant le "Dockerfile" présent
+stop.sh : Permet d'arrêter tout les conteneurs 
+purge.sh : Permet d'arrêter et de supprimer tout les conteneurs, ainsi que les images et les volumes présents
