@@ -5,7 +5,7 @@ import csv
 
 
 fake = Faker()
-
+choice_number = int(input("Veuillez choisir le nombre de données à générer : "))
 
 #Ici, on génère différentes données des ordinateurs
 def gener_pc(id_ordinateur):
@@ -105,7 +105,7 @@ with open(f'affectations.csv', 'a', newline='', encoding='utf-8') as affect_csv:
 
 j=0
 #Insertion des données dans les csv
-for i in range(2,10):
+for i in range(2,choice_number+2):
   j+=1
   with open(f'ordinateurs.csv','a',newline='',encoding='utf-8') as pc_csv:
     writer = csv.writer(pc_csv)
