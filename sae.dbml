@@ -1,0 +1,47 @@
+Table "Ordinateurs" {
+  "id_ordinateur" INT [pk]
+  "configuration_materielle" VARCHAR(255)
+  "systeme_exploitation" VARCHAR(255)
+  "marque" VARCHAR(50)
+  "date_achat" DATE
+  "ram" INT
+}
+
+Table "Logiciels" {
+  "id_logiciel" INT [pk]
+  "nom_logiciel" VARCHAR(255)
+  "version" VARCHAR(50)
+  "licence" VARCHAR(50)
+  "id_ordinateur" INT
+}
+
+Table "Utilisateurs" {
+  "id_utilisateur" INT [pk]
+  "nom_utilisateur" VARCHAR(100)
+  "id_ordinateur" INT
+}
+
+Table "Affectations" {
+  "id_affectation" INT [pk]
+  "id_utilisateur" INT
+  "id_ordinateur" INT
+  "date_affectation" DATE
+}
+
+Table "Maintenance" {
+  "id_maintenance" INT [pk]
+  "id_ordinateur" INT
+  "date_maintenance" DATE
+  "action_effectuee" VARCHAR(255)
+  "technicien" VARCHAR(100)
+}
+
+Ref:"Ordinateurs"."id_ordinateur" < "Logiciels"."id_ordinateur"
+
+Ref:"Ordinateurs"."id_ordinateur" < "Utilisateurs"."id_ordinateur"
+
+Ref:"Utilisateurs"."id_utilisateur" < "Affectations"."id_utilisateur"
+
+Ref:"Ordinateurs"."id_ordinateur" < "Affectations"."id_ordinateur"
+
+Ref:"Ordinateurs"."id_ordinateur" < "Maintenance"."id_ordinateur"
